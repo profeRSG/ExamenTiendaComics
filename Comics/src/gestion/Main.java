@@ -48,7 +48,7 @@ public class Main {
 	}
 
 
-	private static double obtenerMediaNivelRelevancia() {
+	public static double obtenerMediaNivelRelevancia() {
 		double sumatorioNivelRelevancia=0;//Es un double, para hacer una operacion con decimales
 		double contador=0;//REalmente no es necesario, porque se tiene el index, pero
 		//lo hago de estar forma para practicar la forma tradicional de obtener la media
@@ -114,7 +114,7 @@ public class Main {
 		return eleccion;
 	}
 
-	private static void addComic(Comic comicNuevo) {
+	public static void addComic(Comic comicNuevo) {
 		if(index<=TAM_MAX){//Comprobamos que aun no hemos llegado al maximo de comics
 			//Index reprenseta el lugar donde vamos a guardar el proximo comic. Cuando
 			//este supere el tamaño de la array, quiere decir que ya no se pueden guardar mas comics
@@ -139,16 +139,5 @@ public class Main {
 		eleccion=menuPrincipal.elegirOpcion();
 		return eleccion;
 	}
-
-
-
-	public static Comic[] getComicsTienda() {
-		return comicsTienda;
-	}
-
-	public static void setComicsTienda(Comic[] comicsTienda) {
-		Main.comicsTienda = comicsTienda;
-	}
-
 
 }
