@@ -48,6 +48,13 @@ public class Main {
 	}
 
 
+	/**
+	 * Metodo utilizado para obtener el nivel de relevancia medio
+	 * del listado de comics guardado en el sistema.
+	 * 
+	 * @return devuelve el nivel de relevancia medio del nivel de
+	 * relevancia de los comics almacenados.
+	 */
 	public static double obtenerMediaNivelRelevancia() {
 		double sumatorioNivelRelevancia=0;//Es un double, para hacer una operacion con decimales
 		double contador=0;//REalmente no es necesario, porque se tiene el index, pero
@@ -114,6 +121,13 @@ public class Main {
 		return eleccion;
 	}
 
+	/**
+	 * Metodo utulizado para añadir comics a la clase gestora (el Main)
+	 * Se encargar internamente de añadir el comic pasado como parametro
+	 * a la array estatica de la clase
+	 * 
+	 * @param comicNuevo . Comioc que se quiere añadir al sistema
+	 */
 	public static void addComic(Comic comicNuevo) {
 		if(index<=TAM_MAX){//Comprobamos que aun no hemos llegado al maximo de comics
 			//Index reprenseta el lugar donde vamos a guardar el proximo comic. Cuando
